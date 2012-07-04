@@ -3,6 +3,7 @@
 $().ready(function () {
   "use strict";
 
+  var pointerOffset = 5
   var guests = {}
   var socket = io.connect()
   var octocat = $('#github')
@@ -23,13 +24,13 @@ $().ready(function () {
     var guest = guests[data.id]
     if (guest === undefined) {
       guest = guests[data.id] = $('<div class="pointer">').css({
-        left: data.x - 5 + offsetTop,
-        top: data.y - 5 + offsetLeft
+        left: data.x - pointerOffset + offsetTop,
+        top: data.y - pointerOffset + offsetLeft
       }).to({ opacity: 0.5 }, 1).appendTo(document.body)
     }
     guest.to({
-      left: data.x - 5 + offsetLeft,
-      top: data.y - 5 + offsetTop
+      left: data.x - pointerOffset + offsetLeft,
+      top: data.y - pointerOffset + offsetTop
     }, 0.5)
   }).on('disconnect', function (id) {
     var guest = guests[id]
