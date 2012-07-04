@@ -1,12 +1,22 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline}
+body{line-height:1;color:#000;background:#fff}
+ol,ul{list-style:none}
+table{border-collapse:separate;border-spacing:0;vertical-align:middle}
+caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
+a img{border:none}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{margin:0;padding:0;border:0;outline:0;display:block}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]),[hidden]{display:none}
 @font-face{font-family:'ITCLubalinGraphStdBookBold';src:url("../fonts/lubalingraphstd-demi.eot");src:url("../fonts/lubalingraphstd-demi.eot?#iefix") format('embedded-opentype'),url("../fonts/lubalingraphstd-demi.woff") format('woff'),url("../fonts/lubalingraphstd-demi.ttf") format('truetype');font-weight:normal;font-style:normal}
-*{margin:0;padding:0;border:0;box-sizing:border-box}
+*:focus{outline:none}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 html{height:100%}
-body{border-top:6px #8cc84b solid;height:100%;background:#eee}
-h1,h2{position:absolute;width:100%;top:30%;color:#888;text-align:center;text-shadow:0 -1px 1px 2px #111}
-h1{margin-top:-25px;font:33px 'ITCLubalinGraphStdBookBold'}
-h2{margin-top:0;font:45px 'ITCLubalinGraphStdBookBold'}
-ul{display:block}
-li{font:16px Arial;display:inline-block}
-#github{position:absolute;left:50%;top:50%;width:143px;height:183px;background:url("../images/octocat.png") no-repeat 50% 0%;margin:-20px 0 0 -72px}
-#github iframe{display:block;position:absolute;bottom:0;left:50%;margin-left:-55px}
-.pointer{width:29px;height:30px;position:absolute;top:-50px;left:-50px;background:url("../images/cursor.png") no-repeat}
+body{border-top:6px #8cc84b solid;height:100%;background-color:#f8fafa;background-image:-webkit-gradient(radial,50% 50%,0,50% 50%,200,from(#e6e8e8),to(#f8fafa));background-image:-webkit-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-moz-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-o-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-ms-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:radial-gradient(50% 50%,#f8fafa,#e6e8e8)}
+h1,h2{position:absolute;top:50%;left:0;width:100%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-o-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);color:#888;text-align:center;text-shadow:0 -1px 1px 2px #111}
+h1{margin-top:-200px;font:33px 'ITCLubalinGraphStdBookBold'}
+h2{margin-top:-165px;font:45px 'ITCLubalinGraphStdBookBold'}
+ul{display:block;}
+ul li{font:16px Arial;display:inline-block}
+#github{position:absolute;left:50%;top:50%;width:143px;height:183px;background:url("../images/octocat.png") no-repeat 50% 0%;margin-top:0;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
+#github iframe{display:block;position:absolute;left:50%;bottom:0;margin-left:-55px}
+.pointer{width:29px;height:30px;position:absolute;top:-50px;left:-50px;background:url("../images/cursor.png") no-repeat;opacity:0;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:alpha(opacity=0)}
