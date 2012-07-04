@@ -1,7 +1,7 @@
 {
   "author": "Kilian Ciuffolo <kilian.ciuffolo@gmail.org> (http://nailik.org)",
   "name": "nailik.org",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "repository": {
     "type": "git",

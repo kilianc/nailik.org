@@ -12,11 +12,14 @@ audio:not([controls]),[hidden]{display:none}
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 html{height:100%}
 body{border-top:6px #8cc84b solid;height:100%;background-color:#f8fafa;background-image:-webkit-gradient(radial,50% 50%,0,50% 50%,200,from(#e6e8e8),to(#f8fafa));background-image:-webkit-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-moz-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-o-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-ms-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:radial-gradient(50% 50%,#f8fafa,#e6e8e8)}
-h1,h2{position:absolute;top:50%;left:0;width:100%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-o-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);color:#888;text-align:center;text-shadow:0 -1px 1px 2px #111}
-h1{margin-top:-200px;font:33px 'ITCLubalinGraphStdBookBold'}
-h2{margin-top:-165px;font:45px 'ITCLubalinGraphStdBookBold'}
+h1,h2{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-150px);-moz-transform:translate(-50%,-150px);-o-transform:translate(-50%,-150px);-ms-transform:translate(-50%,-150px);transform:translate(-50%,-150px);color:#888;text-shadow:0 -1px 1px 2px #111;font-family:'ITCLubalinGraphStdBookBold';white-space:nowrap}
+h1{font-size:33px}
+h2{margin-top:30px;font-size:45px}
 ul{display:block;}
 ul li{font:16px Arial;display:inline-block}
-#github{position:absolute;left:50%;top:50%;width:143px;height:183px;background:url("../images/octocat.png") no-repeat 50% 0%;margin-top:0;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
+#github{position:absolute;left:50%;top:50%;width:143px;height:183px;background:url("../images/octocat.png") no-repeat 50% 0%;margin-top:40px;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
 #github iframe{display:block;position:absolute;left:50%;bottom:0;margin-left:-55px}
 .pointer{width:29px;height:30px;position:absolute;top:-50px;left:-50px;background:url("../images/cursor.png") no-repeat;opacity:0;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);filter:alpha(opacity=0)}
+@media only screen and (max-height : 350px){h1,h2{-webkit-transform:translate(-100%,-50px);-moz-transform:translate(-100%,-50px);-o-transform:translate(-100%,-50px);-ms-transform:translate(-100%,-50px);transform:translate(-100%,-50px);margin-left:18px}
+#github{-webkit-transform:translate(50px,-50%);-moz-transform:translate(50px,-50%);-o-transform:translate(50px,-50%);-ms-transform:translate(50px,-50%);transform:translate(50px,-50%);margin:0}
+}

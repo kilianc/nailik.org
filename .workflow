@@ -1,7 +1,7 @@
 {
   "js": {
     "targets": [{
-      "output": "public/js/main.min.js",
+      "output": "public/js/main.min.js --min",
       "src": [
         "js/vendor/greensock/CSSPlugin.js",
         "js/vendor/greensock/TweenLite.js",

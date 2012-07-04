@@ -18,7 +18,6 @@ $().ready(function () {
       var offset = octocat.offset()
       offsetTop = offset.top
       offsetLeft = offset.left
-      console.dir(offset)
     }).trigger('resize')
   }).on('move', function (data) {
     var guest = guests[data.id]

@@ -28,20 +28,19 @@ body
   background-image: radial-gradient(50% 50%, #f8fafa, #e6e8e8);
 
 h1, h2
-  absolute: top 50% left 0
-  width: 100%
-  transform: translateY(-50%)
+  absolute: top 50% left 50%
+  transform: translate(-50%, -150px)
   color: #888
-  text-align: center
   text-shadow: 0 -1px 1px 2px #111
+  font-family: 'ITCLubalinGraphStdBookBold'
+  white-space: nowrap
 
 h1
-  margin-top: -200px
-  font: 33px 'ITCLubalinGraphStdBookBold'
+  font-size: 33px
 
 h2
-  margin-top: -165px
-  font: 45px 'ITCLubalinGraphStdBookBold'
+  margin-top: 30px
+  font-size: 45px
 
 ul
   display: block
@@ -53,7 +52,7 @@ ul
   width: 143px
   height: 183px
   background: url('../images/octocat.png') no-repeat 50% 0%
-  margin-top: 00px
+  margin-top: 40px
   transform: translate(-50%, -50%)
   iframe
     display: block
@@ -66,3 +65,12 @@ ul
   absolute: top -50px left -50px
   background: url('../images/cursor.png') no-repeat
   opacity: 0
+
+@media only screen and (max-height : 350px)
+  h1, h2
+    transform: translate(-100%, -50px)
+    margin-left: 18px
+
+  #github
+    transform: translate(50px, -50%)
+    margin: 0
