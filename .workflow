@@ -6,6 +6,7 @@
         "js/vendor/greensock/CSSPlugin.js",
         "js/vendor/greensock/TweenLite.js",
         "js/vendor/zepto.js",
+        "js/libs/jquery.tweenlite.js",
         "js/analytics.js",
         "js/main.js --check"
       ]

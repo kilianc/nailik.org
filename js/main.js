@@ -22,22 +22,21 @@ $().ready(function () {
   }).on('move', function (data) {
     var guest = guests[data.id]
     if (guest === undefined) {
-      guests[data.id] = guest = $('<div class="pointer">').css({
+      guest = guests[data.id] = $('<div class="pointer">').css({
         left: data.x - 5 + offsetTop,
         top: data.y - 5 + offsetLeft
-      }).appendTo(document.body)[0]
-      TweenLite.to(guest, 1, { css: { opacity: 0.5 } })
+      }).to({ opacity: 0.5 }, 1).appendTo(document.body)
     }
-    TweenLite.to(guest, 0.5, { css: {
+    guest.to({
       left: data.x - 5 + offsetLeft,
       top: data.y - 5 + offsetTop
-    }})
+    }, 0.5)
   }).on('disconnect', function (id) {
     var guest = guests[id]
     if (!guest) return
-    TweenLite.to(guest, 0.5, { css: { opacity: 0 }, onComplete: function () {
+    guest.to({ opacity: 0 }, 1, function () {
         $(guest).remove()
         ;delete guests[id]
-    }})
+    })
   })
 })
