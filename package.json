@@ -13,5 +13,9 @@
   },
   "engines": {
     "node": ">= 0.6.0"
+  },
+  "subdomain": "nailik",
+  "scripts": {
+    "start": "server.js"
   }
 }

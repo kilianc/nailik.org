@@ -9,7 +9,12 @@ $().ready(function () {
   var octocat = $('#github')
   var offsetLeft, offsetTop
 
-  socket.on('connect', function () {
+  socket
+    .on('connect', onConnect)
+    .on('move', onMove)
+    .on('disconnect', onDisconnect)
+
+  function onConnect() {
     $(window).on('mousemove', function (e) {
       socket.emit('move', {
         x: e.clientX - offsetLeft,
@@ -20,24 +25,32 @@ $().ready(function () {
       offsetTop = offset.top
       offsetLeft = offset.left
     }).trigger('resize')
-  }).on('move', function (data) {
+  }
+
+  function onMove(data) {
     var guest = guests[data.id]
+
     if (guest === undefined) {
       guest = guests[data.id] = $('<div class="pointer">').css({
         left: data.x - pointerOffset + offsetTop,
         top: data.y - pointerOffset + offsetLeft
       }).to({ opacity: 0.5 }, 1).appendTo(document.body)
     }
+
     guest.to({
       left: data.x - pointerOffset + offsetLeft,
       top: data.y - pointerOffset + offsetTop
     }, 0.5)
-  }).on('disconnect', function (id) {
+  }
+
+  function onDisconnect(id) {
     var guest = guests[id]
+
     if (!guest) return
+
     guest.to({ opacity: 0 }, 1, function () {
-        $(guest).remove()
-        ;delete guests[id]
+      $(guest).remove()
+      ;delete guests[id]
     })
-  })
+  }
 })
