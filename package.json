@@ -1,7 +1,7 @@
 {
-  "author": "Kilian Ciuffolo <kilian.ciuffolo@gmail.org> (http://nailik.org)",
+  "author": "Kilian Ciuffolo <me@nailik.org> (http://nailik.org)",
   "name": "nailik.org",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "repository": {
     "type": "git",
@@ -15,6 +15,10 @@
     "node": ">= 0.6.0"
   },
   "subdomain": "nailik",
+  "domains": [
+    "nailik.org",
+    "dev.nailik.org"
+  ],
   "scripts": {
     "start": "server.js"
   }
