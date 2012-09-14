@@ -11,7 +11,7 @@ audio:not([controls]),[hidden]{display:none}
 *:focus{outline:none}
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 html{height:100%}
-body{border-top:6px #8cc84b solid;height:90%;background-color:#f8fafa;background-image:-webkit-gradient(radial,50% 50%,0,50% 50%,200,from(#e6e8e8),to(#f8fafa));background-image:-webkit-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-moz-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-o-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-ms-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:radial-gradient(50% 50%,#f8fafa,#e6e8e8)}
+body{border-top:6px #8cc84b solid;height:100%;background-color:#f8fafa;background-image:-webkit-gradient(radial,50% 50%,0,50% 50%,200,from(#e6e8e8),to(#f8fafa));background-image:-webkit-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-moz-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-o-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:-ms-radial-gradient(50% 50%,#f8fafa,#e6e8e8);background-image:radial-gradient(50% 50%,#f8fafa,#e6e8e8)}
 h1,h2{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-150px);-moz-transform:translate(-50%,-150px);-o-transform:translate(-50%,-150px);-ms-transform:translate(-50%,-150px);transform:translate(-50%,-150px);color:#888;text-shadow:0 -1px 1px 2px #111;font-family:'ITCLubalinGraphStdBookBold';white-space:nowrap}
 h1{font-size:33px}
 h2{margin-top:30px;font-size:45px}
