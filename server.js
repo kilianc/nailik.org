@@ -1,13 +1,17 @@
-var http = require('http');
-    express = require('express'),
-    io = require('socket.io'),
-    version = require('./package').version
+/*!
+ * server.js
+ * Created by Kilian Ciuffolo on July 3, 2012
+ * (c) 2012
+ */
 
-var app = express()
-var server = http.createServer(app)
-var io = io.listen(server)
+'use strict'
 
-app.use(express.static(__dirname + '/public'))
+const app = require('express')()
+const server = require('http').Server(app)
+const io = require('socket.io').listen(server)
+const serve = require('express').static
+
+app.use(serve(__dirname + '/public'))
 
 io.set('log level', 0)
 io.sockets.on('connection', function (socket) {
@@ -20,4 +24,12 @@ io.sockets.on('connection', function (socket) {
   })
 })
 
-server.listen(process.env.PORT || 9999)
+server.listen(8080)
+
+/**
+ * Quit if SIGINT
+ */
+process.on('SIGINT', function() {
+  console.log('Caught interrupt signal')
+  process.exit()
+})
